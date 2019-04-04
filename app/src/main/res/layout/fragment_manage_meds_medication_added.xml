@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="NEW MEDICATION HAS BEEN ADDED"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textview_medication_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/smallTextSize"
+                tools:text="CARDURA 8 MG" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/xsmallTextSize"
+                    android:text="WOULD YOU LIKE TO ENTER ANOTHER MEDICATION?" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_add_med"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="ENTER ANOTHER MEDICATION"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_done"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="DONE ENTERING MEDICATIONS"
+                        android:textSize="@dimen/smallTextSize" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

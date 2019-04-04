@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largeButtonHeight">94dp</dimen>
+    <dimen name="mediumButtonHeight">62dp</dimen>
+    <dimen name="regularButtonHeight">72dp</dimen>
+    <dimen name="xxsmallTextSize">16sp</dimen>
+    <dimen name="xxxsmallTextSize">14sp</dimen>
+    <dimen name="xsmallTextSize">18sp</dimen>
+    <dimen name="smallTextSize">20sp</dimen>
+    <dimen name="mediumTextSize">22sp</dimen>
+    <dimen name="largeTextSize">26sp</dimen>
+    <dimen name="contextTitleSize">26sp</dimen>
+    <dimen name="weight_ratio">0dp</dimen>
+    <dimen name="textPadding">10dp</dimen>
+    <dimen name="layoutPadding">20dp</dimen>
+    <dimen name="buttonPadding">7dp</dimen>
+
+</resources>

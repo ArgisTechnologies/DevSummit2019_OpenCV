@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="GET/VIEW MEDICATIONS"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_get_scheduled_med"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="GET SCHEDULED MEDICATION EARLY"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+                <Button
+                    android:id="@+id/button_review_med_sched"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="REVIEW MEDICATION SCHEDULE"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_get_as_needed_med"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="GET AS-NEEDED MEDICATION"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+                <Button
+                    android:id="@+id/button_check_fill_status"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="CHECK FILL STATUS"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_pause_med"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="PAUSE MEDICATION"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+                <Button
+                    android:id="@+id/button_med_tracker"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="MEDICATION TRACKER"
+                    android:textSize="@dimen/xsmallTextSize" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_screen_brightness"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="@dimen/mediumButtonHeight"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="SCREEN BRIGHTNESS"
+                android:textSize="@dimen/xsmallTextSize" />
+
+            <Button
+                android:id="@+id/button_select_voice"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="@dimen/mediumButtonHeight"
+                android:layout_column="2"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="SELECT VOICE"
+                android:textSize="@dimen/xsmallTextSize" />
+
+
+            <Button
+                android:id="@+id/button_color_theme"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="@dimen/mediumButtonHeight"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="COLOR THEME"
+                android:textSize="@dimen/xsmallTextSize" />
+
+            <Button
+                android:id="@+id/button_user_pin"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="@dimen/mediumButtonHeight"
+                android:layout_column="2"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="ADD / CHG USER PIN"
+                android:textSize="@dimen/xsmallTextSize" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="ADD NEW USER NICKNAME"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center_horizontal"
+                android:text="MAY CONTAIN 2 TO 10 CHARACTERS"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edittext_add_user"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionGo|flagNoExtractUi"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:privateImeOptions="nm"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="@dimen/weight_ratio"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight=".5"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="ENTER"
+                android:textSize="@dimen/xxxsmallTextSize" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

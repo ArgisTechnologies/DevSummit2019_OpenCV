@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="EDIT USER"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_change_nickname"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="CHANGE NICKNAME"
+                android:textSize="@dimen/smallTextSize" />
+
+            <Button
+                android:id="@+id/button_notifications"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="NOTIFICATIONS"
+                android:textSize="@dimen/smallTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

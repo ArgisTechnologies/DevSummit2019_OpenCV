@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="REMOVE MEDICATION"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="2. REMOVE MEDICATION FROM BIN AND DISPOSE IN AN APPROPRIATE PLACE."
+                android:textSize="@dimen/xsmallTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="3. CLEAN BIN BY RINSING WITH HOT WATER AND TOWEL DRY."
+                android:textSize="@dimen/xsmallTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="4. PLACE EMPTY BIN BACK IN DEVICE AND CLOSE DEVICE DOOR."
+                android:textSize="@dimen/xsmallTextSize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_help"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="help"
+                        android:textSize="@dimen/mediumTextSize" />
+
+                    <Button
+                        android:id="@+id/button_developer"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="PROCEED (DEV)"
+                        android:textSize="@dimen/mediumTextSize" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

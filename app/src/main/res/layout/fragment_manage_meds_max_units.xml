@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="ENTER MAX UNITS AND FREQUENCY"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_units_per_dose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_increase_units_per_dose"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_increase" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX UNITS PER DOSE"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_max_units_per_dose"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="@dimen/xxsmallTextSize"
+                        tools:text="1" />
+
+                    <ImageView
+                        android:id="@+id/button_decrease_units_per_dose"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_decrease" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_units_per_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_increase_units_per_day"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_increase" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAX UNITS PER DAY"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_max_units_per_day"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="@dimen/xxsmallTextSize"
+                        tools:text="3" />
+
+                    <ImageView
+                        android:id="@+id/button_decrease_units_per_day"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_decrease" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_hours_between_doses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/button_increase_hours_between_doses"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_increase" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MIN HRS BETWEEN DOSES"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/edittext_min_hours_between_doses"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="@dimen/xxsmallTextSize"
+                        tools:text="4" />
+
+                    <ImageView
+                        android:id="@+id/button_decrease_hours_between_doses"
+                        android:layout_width="72dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/ic_decrease" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/button_next"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_selector"
+                    android:text="NEXT"
+                    android:textSize="@dimen/mediumTextSize" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

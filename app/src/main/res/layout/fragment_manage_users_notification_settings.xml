@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="NOTIFICATION SETTINGS"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/button_notification_person"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="EDIT NOTIFICATION SETTINGS BASED ON CONTACT PERSON"
+                android:textSize="@dimen/xxsmallTextSize" />
+
+            <Button
+                android:id="@+id/button_notification_event"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="EDIT NOTIFICATION SETTINGS BASED ON EVENT/TRIGGER"
+                android:textSize="@dimen/xxsmallTextSize" />
+
+            <!--<Button
+                android:id="@+id/button_notification_default"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="USE DEFAULT NOTIFICATION SETTINGS"
+                android:textSize="@dimen/xxsmallTextSize" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

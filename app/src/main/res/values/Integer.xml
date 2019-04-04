@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="numOfBins">14</integer>
+    <integer name="drawerLocation">97</integer>
+    <integer name="refridgeratorLocation">98</integer>
+    <integer name="otherLocation">99</integer>
+</resources>

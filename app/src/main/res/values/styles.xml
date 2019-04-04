@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:textColor">@color/textColor</item>
+
+        <!-- TODO -->
+
+    </style>
+
+    <style name="Sunrise" parent="AppTheme">
+
+        <!-- TODO -->
+
+    </style>
+
+    <style name="Ocean" parent="AppTheme">
+
+        <!-- TODO -->
+
+    </style>
+
+    <style name="Forest" parent="AppTheme">
+
+        <!-- TODO -->
+
+    </style>
+
+    <style name="Frost" parent="AppTheme">
+
+        <!-- TODO -->
+
+    </style>
+
+</resources>

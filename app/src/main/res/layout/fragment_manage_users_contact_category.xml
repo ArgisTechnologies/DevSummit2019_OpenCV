@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="SELECT A CATEGORY FOR CONTACT"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="WHICH OPTION BEST DESCRIBES YOUR RELATIONSHIP TO"
+                android:textSize="@dimen/xxsmallTextSize" />
+
+            <TextView
+                android:id="@+id/textview_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/largeTextSize"
+                tools:text="MARGARET GEORGE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/button_next"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_myself"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="MYSELF"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_family"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="MY FAMILY MEMBER"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_caregiver"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="MY CAREGIVER"
+                        android:textSize="@dimen/smallTextSize" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_next"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_selector"
+                    android:padding="7dp"
+                    android:text="NEXT"
+                    android:textSize="@dimen/smallTextSize" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

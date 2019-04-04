@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_dispense_time_name"
+            android:layout_width="@dimen/weight_ratio"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/xxsmallTextSize"
+            tools:text="MID MORNING\n10:00 AM" />
+
+
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="@dimen/weight_ratio"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:background="@drawable/button_selector"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/edittext_quantity"
+            android:layout_width="@dimen/weight_ratio"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".25"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            tools:text="2" />
+
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="@dimen/weight_ratio"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".25"
+            android:background="@drawable/button_selector"
+            android:text="+" />
+    </LinearLayout>
+
+
+</LinearLayout>

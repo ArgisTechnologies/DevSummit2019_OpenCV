@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="@dimen/contextTitleSize"
+        android:text="EMERGENCY STOP" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="THE DEVICE IS BEING RESET."
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_home"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="HOME"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <Button
+                android:id="@+id/button_retry"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/regularButtonHeight"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selector"
+                android:padding="7dp"
+                android:text="RETRY"
+                android:textSize="@dimen/mediumTextSize" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

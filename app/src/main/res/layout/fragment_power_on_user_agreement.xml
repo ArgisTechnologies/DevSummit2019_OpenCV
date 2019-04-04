@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rightContent"
+    android:id="@+id/fragment_power_on_user_agreement"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="USER AGREEMENT"
+        android:textSize="@dimen/contextTitleSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_agree"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fastScrollAlwaysVisible="true"
+            android:fastScrollEnabled="true"
+            android:scrollIndicators="right"
+            android:scrollbarSize="30dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/rounded_rectangle"
+            android:scrollbarTrackVertical="@drawable/rounded_rectangle_pressed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUserAgreement"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit tortor orci, ac dignissim tellus vulputate at. Donec id lacinia neque. Integer velit arcu, efficitur vitae leo quis, dapibus commodo lacus. Quisque at lorem at neque egestas pretium non sed libero. Etiam nunc tortor, rhoncus a semper sed, feugiat nec velit. Vivamus ac vestibulum quam. Sed feugiat, ante eget accumsan efficitur, ante arcu suscipit risus, vel viverra erat arcu sit amet arcu. Pellentesque id eros nec libero dignissim gravida. Duis pretium aliquet enim. Morbi consequat, urna id bibendum fermentum, est libero egestas neque, non vulputate velit metus quis arcu. Phasellus sit amet ante eu velit aliquam aliquet."
+                android:textSize="@dimen/smallTextSize" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_agree"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/regularButtonHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_selector"
+            android:padding="7dp"
+            android:text="I AGREE"
+            android:textSize="@dimen/mediumTextSize" />
+    </RelativeLayout>
+</LinearLayout>

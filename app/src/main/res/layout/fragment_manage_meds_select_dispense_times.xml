@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="SELECT DISPENSING TIMES"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_dispense_times_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/layout_bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:fadeScrollbars="false"
+                    android:padding="2dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarSize="30dp"
+                    android:scrollbarStyle="outsideInset"
+                    android:scrollbarThumbVertical="@drawable/rounded_rectangle"
+                    android:scrollbarTrackVertical="@drawable/rounded_rectangle_pressed"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/textview_add_dispense_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center_horizontal"
+                    android:text="Press ADD OR EDIT DISPENSING TIMES"
+                    android:textSize="@dimen/mediumTextSize" />
+
+                <LinearLayout
+                    android:id="@+id/layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <Button
+                        android:id="@+id/button_add_dispense_time"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="ADD OR EDIT DISPENSING TIMES"
+                        android:textSize="@dimen/xsmallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_next"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:text="NEXT"
+                        android:textSize="@dimen/mediumTextSize" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_statusbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dp"
+    android:paddingTop="7dp"
+    android:paddingRight="7dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/symbol_wifi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_wifi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symbol_wifi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="WI-FI"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/layout_wifi">
+
+        <ImageView
+            android:id="@+id/symbol_bluetooth"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_bt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symbol_bluetooth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="CONNECTED"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7dp">
+
+        <TextClock
+            android:id="@+id/textclock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:format12Hour="h:mm a"
+            android:padding="0dp"
+            android:textSize="26sp" />
+
+        <TextClock
+            android:id="@+id/textclock_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textclock_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-7dp"
+            android:format12Hour="EEE, MMM d"
+            android:padding="0dp"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/symbol_battery"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_battery" />
+
+        <TextView
+            android:id="@+id/textview_battery_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symbol_battery"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="44%"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/layout_battery">
+
+        <ImageView
+            android:id="@+id/symbol_drawer"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symbol_drawer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="DRAWER"
+            android:textSize="8sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/layout_drawer">
+
+
+        <ImageView
+            android:id="@+id/symbol_door"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symbol_door"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="DOOR"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

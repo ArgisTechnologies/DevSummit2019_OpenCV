@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity"
+    android:baselineAligned="false">
+
+    <include layout="@layout/leftuser" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textPadding"
+            android:text="@string/frag_cannot_retrieve_med_title"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/textPadding"
+            android:text="@string/frag_cannot_retrieve_med_sub_title"
+            android:textSize="@dimen/xsmallTextSize" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/layoutPadding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_retry"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/frag_cannot_retrieve_med_retry"
+                    android:textSize="@dimen/mediumTextSize" />
+
+                <Button
+                    android:id="@+id/button_dispense_manual_retrieval"
+                    android:layout_width="@dimen/weight_ratio"
+                    android:layout_height="@dimen/regularButtonHeight"
+                    android:layout_marginStart="@dimen/layoutPadding"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/frag_cannot_retrieve_med_manual_retrieval"
+                    android:textSize="@dimen/mediumTextSize" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

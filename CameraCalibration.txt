@@ -1,0 +1,10 @@
+//Brady Camera in Denver - Static Mount
+08-04 16:06:33.907 2495-2524/com.logicpd.papapill D/BinCamera: Calibrated: Errors:1.1800096898134937
+    cameraMatrix:->[821.6479090829913, 0, 640;
+     0, 829.0141944013287, 360;
+     0, 0, 1]
+08-04 16:06:33.908 2495-2524/com.logicpd.papapill D/BinCamera: distCoeffs:->[-0.3617796188207561;
+     0.1851244376029701;
+     0;
+     0;
+     0]

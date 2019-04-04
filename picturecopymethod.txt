@@ -1,0 +1,20 @@
+These are basic instructions on copying and deleting pictures on the Android Things device.
+
+The code is built to write various stages of the project's image to the sdcard/Pictures folder to allow export and use in presentations and explanation of progress.  These images will be named for the stage and overwrite themselves on each runto make sure they don't bloat up the directory, and therefore only your latest run will be available at any given time.  To manage these files use the adb utility that is part of the Android platform tools.
+
+First you have to connect with adb to the device and this is usually completed after the device is on your Wifi Network.  If you need instructions on that go to:
+
+https://developer.android.com/things/hardware/raspberrypi
+
+To push and pull files from the device follow these instructions:
+
+https://www.androidauthority.com/android-customization-transfer-files-adb-push-adb-pull-601015/ 
+
+And to delete:
+
+[adb shell]
+[ls] - to see content
+[cd] - to change directories
+[rm] - to delete a specific file
+
+all should be standard linux/unix based functionality.

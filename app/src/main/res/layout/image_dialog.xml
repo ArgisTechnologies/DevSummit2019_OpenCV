@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="1000px"
+    android:layout_height="600px">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imgViewDisplay"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:src="@drawable/ic_battery"
+                    android:background="@android:color/black"
+                    android:scaleType="fitCenter"/>
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtThresholds"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:text="Low: 22 High: 44" />
+
+                    <SeekBar
+                        android:id="@+id/sbarLowThreshold"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:max="100"/>
+
+                    <SeekBar
+                        android:id="@+id/sbarHighThreshold"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:max="300"/>
+
+                    <TextView
+                        android:id="@+id/txtHoughThreshold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:text="Hough: 50" />
+
+                    <SeekBar
+                        android:id="@+id/sbarHoughThreshold"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:max="100"/>
+
+
+
+                    <Button
+                        android:id="@+id/btnRunImageProcess"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Run Image Process" />
+
+                </TableLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="MANAGE MEDICATIONS"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button_new_med"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="ENTER NEW MEDICATION"
+                        android:textSize="@dimen/xxsmallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_change_med_schedule"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_column="2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="CHANGE A MEDICATION SCHEDULE"
+                        android:textSize="@dimen/xxsmallTextSize" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/button_refill_bin"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="REFILL\nBIN"
+                        android:textSize="@dimen/xxsmallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_shared_dispense"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_column="2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="EDIT NAMED DISPENSING TIMES"
+                        android:textSize="@dimen/xxsmallTextSize" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/button_remove_med"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="@dimen/regularButtonHeight"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="REMOVE\nMEDICATION"
+                        android:textSize="@dimen/xxsmallTextSize" />
+
+                    <Button
+                        android:id="@+id/button_user_pin"
+                        android:layout_width="@dimen/weight_ratio"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:padding="7dp"
+                        android:text="ADD / CHG\nUSER PIN"
+                        android:textSize="@dimen/xxsmallTextSize"
+                        android:visibility="invisible" />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Papapill</string>
+
+    <string name="confirm_delete_custom_text">DELETING USER FROM THE SYSTEM WILL DELETE ALL USER DATA FOR</string>
+    <string name="confirm_delete_custom_text2">DELETE USER AND USER DATA FROM SYSTEM?</string>
+    <string name="text_notification_settings_message">BASED ON THE INFORMATION YOU HAVE PROVIDED, NOTIFICATION SETTINGS FOR THIS CONTACT HAVE BEEN SET UP AS SHOWN IN THE FOLLOWING LIST.\n\nYOU MAY CHOOSE TO EDIT ANY OF THESE SETTINGS BY SELECTING OR DESELECTING THE \"TEXT\", \"VOICE\" OR \"EMAIL\" BUTTONS, AND SETTINGS WILL BE SAVED.</string>
+
+    <string-array name="notification_settings">
+        <item>Time to take medication</item>
+        <item>Missed dose 30 minutes</item>
+        <item>Missed dose 1 hour</item>
+        <item>Missed dose 2 hours</item>
+        <item>Missed dose 4 hours</item>
+        <item>Consecutive missed doses</item>
+        <item>Missed doses over last 24-hours</item>
+        <item>As Needed Medication Taken</item>
+        <item>Sad face</item>
+        <item>Early medication retrieval (vacation mode)</item>
+        <item>3 consecutive PIN number errors</item>
+        <item>System PIN number reset</item>
+        <item>User Added/Edited</item>
+        <item>User PIN change</item>
+        <item>User PIN number reset</item>
+        <item>Low pill count</item>
+        <item>Change to System Settings</item>
+        <item>New Medication Added</item>
+        <item>Medication Refilled</item>
+        <item>Medication Schedule Changed</item>
+        <item>Tilt Warning</item>
+        <item>Power Loss</item>
+        <item>Medication expired</item>
+        <item>Medication expiring within 7 days</item>
+    </string-array>
+
+    <string-array name="notification_types">
+        <item>Text</item>
+        <item>Voice</item>
+        <item>Email</item>
+    </string-array>
+
+    <string-array name="medication_strengths">
+        <item>MG</item>
+        <item>G</item>
+        <item>MCG</item>
+    </string-array>
+
+    <string-array name="medication_locations">
+        <item>BIN</item>
+        <item>DRAWER</item>
+        <item>REFRIGERATOR</item>
+        <item>OTHER</item>
+    </string-array>
+
+
+    <!-- fragment_cannot_retrieve_med -->
+    <string name="frag_cannot_retrieve_med_manual_retrieval">MANUAL RETRIEVAL</string>
+    <string name="frag_cannot_retrieve_med_retry">RETRY</string>
+    <string name="frag_cannot_retrieve_med_title">CANNOT RETRIEVE MEDICATION</string>
+    <string name="frag_cannot_retrieve_med_sub_title">THE DEVICE IS UNABLE TO RETRIEVE THE REQUESTED MEDICATION AT THIS TIME.</string>
+
+    <!-- fragment_manage_meds_select_med_location -->
+    <string name="selectMedLocationFrag_must_impl_butClick"> must implement OnButtonClickListener</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/checkbox_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/textview_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/checkbox_contact"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="ALAN KILLOREN" />
+
+    <Button
+        android:id="@+id/button_remove_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_selector"
+        android:text="REMOVE"
+        android:textSize="@dimen/xxxsmallTextSize" />
+
+</RelativeLayout>

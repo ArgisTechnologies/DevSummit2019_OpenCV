@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/leftnavigation" />
+
+    <LinearLayout
+        android:id="@+id/layout_rightpane"
+        android:layout_width="@dimen/weight_ratio"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/rightContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="SELECT LOCATION FOR NEW MED"
+            android:textSize="@dimen/contextTitleSize" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="PLEASE NOTE THAT MEDICATIONS THAT ARE SUGAR-COATED, DISSOLVED IN WATER, OR GEL-CAPS MAY NOT BE STORED IN BINS"
+                android:textSize="@dimen/xxsmallTextSize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button_bin"
+                            android:layout_width="@dimen/weight_ratio"
+                            android:layout_height="@dimen/regularButtonHeight"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector"
+                            android:padding="7dp"
+                            android:text="BIN"
+                            android:textSize="@dimen/xsmallTextSize" />
+
+                        <Button
+                            android:id="@+id/button_fridge"
+                            android:layout_width="@dimen/weight_ratio"
+                            android:layout_height="@dimen/regularButtonHeight"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector"
+                            android:padding="7dp"
+                            android:text="REFRIGERATOR"
+                            android:textSize="@dimen/xsmallTextSize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button_drawer"
+                            android:layout_width="@dimen/weight_ratio"
+                            android:layout_height="@dimen/regularButtonHeight"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector"
+                            android:padding="7dp"
+                            android:text="DRAWER"
+                            android:textSize="@dimen/xsmallTextSize" />
+
+                        <Button
+                            android:id="@+id/button_other"
+                            android:layout_width="@dimen/weight_ratio"
+                            android:layout_height="@dimen/regularButtonHeight"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_selector"
+                            android:padding="7dp"
+                            android:text="OTHER"
+                            android:textSize="@dimen/xsmallTextSize" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
